@@ -1,0 +1,16 @@
+
+.navbar-nav > a{
+  color: rgb(255, 255, 255);
+  text-shadow: 1px -1px 3px rgb(50, 121, 22);
+  background-color: rgba(0, 0, 0,0.4);
+  padding: 5px 20px;
+  margin: 1px 12px;
+  border-radius: 4px;
+  font-size: 0.7rem;
+}
+.navbar-nav > a:hover{
+  background-color: rgba(0, 0, 0,0.9);
+}
+.navbar-nav > a:active{
+  background-color: rgb(191, 116, 10);
+}

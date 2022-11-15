@@ -1,0 +1,10 @@
+header{
+  background-color: rgb(93, 59, 23);
+  padding: 14px 0;
+}
+.navbar{
+  border-top: 2px solid rgb(0,0,0);
+  border-bottom: 2px solid rgb(0,0,0);
+  background: linear-gradient(351deg, rgba(150,53,2,0.2) 25%, rgba(234,149,79,1) 60%, rgba(123,74,5,0.8606793059020483) 82%);
+  box-shadow: -5px 5px 7px 4px rgba(245, 176, 107, 0.7);
+}

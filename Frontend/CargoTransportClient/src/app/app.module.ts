@@ -10,6 +10,7 @@ import { FooterComponent } from './container/components/shared/footer/footer.com
 import { HomeComponent } from './container/components/home/home.component';
 import { AboutComponent } from './container/components/about/about.component';
 import { ContactComponent } from './container/components/contact/contact.component';
+import { NotFoundComponent } from './container/components/error-components/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ContactComponent } from './container/components/contact/contact.compone
     FooterComponent,
     HomeComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
