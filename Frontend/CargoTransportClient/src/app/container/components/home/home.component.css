@@ -1,0 +1,11 @@
+.main-img{
+  width: 80%;
+  height: 300px;
+  margin-top: 60px;
+  outline-style:outset;
+  outline-width: 0.11px;
+  outline-offset: 14px;
+  outline-color: rgba(249, 195, 113,0.4);
+  border-radius: 7px;
+  box-shadow: 0 0 17px 6px rgba(252, 174, 55, 0.7);
+}
