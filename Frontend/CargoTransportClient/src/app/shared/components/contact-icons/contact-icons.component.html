@@ -1,0 +1,19 @@
+<address class="footer-address">
+  <div class="row">
+    <div class="col-3">
+      <span>
+        <fa-icon [icon]="faPhone"></fa-icon>
+          <b>{{phoneNumber}}</b>
+      </span>
+  </div>
+    <div class="col-5">
+      <a class="email" [href]="'mailto:'+emailCompany" >
+        <span>
+          <fa-icon class="email-icon" [icon]="faAd"></fa-icon>
+          <i class="email-text">{{emailCompany}}</i>
+        </span>
+
+      </a>
+    </div>
+  </div>
+</address>

@@ -12,6 +12,8 @@ import { HomeComponent } from './container/components/home/home.component';
 import { AboutComponent } from './container/components/about/about.component';
 import { ContactComponent } from './container/components/contact/contact.component';
 import { NotFoundComponent } from './container/components/error-components/not-found/not-found.component';
+import { SocialIconsComponent } from './shared/components/social-icons/social-icons.component';
+import { ContactIconsComponent } from './shared/components/contact-icons/contact-icons.component';
 
 
 @NgModule({
@@ -24,7 +26,9 @@ import { NotFoundComponent } from './container/components/error-components/not-f
     HomeComponent,
     AboutComponent,
     ContactComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    SocialIconsComponent,
+    ContactIconsComponent
   ],
   imports: [
     BrowserModule,
