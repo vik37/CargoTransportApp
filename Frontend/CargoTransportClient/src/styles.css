@@ -16,3 +16,8 @@ p{
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   letter-spacing: 0.4px;
 }
+span{
+  color: rgb(174, 106, 24);
+  filter:sepia(3)
+}
+

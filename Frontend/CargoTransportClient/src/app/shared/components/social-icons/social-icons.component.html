@@ -1,0 +1,10 @@
+<div class="row">
+    <div *ngFor="let social of socialMaps | keyvalue" class="col-1">
+      <a class="icon" [href]="social.value" target="_blank">
+        <span>
+          <fa-icon [icon]="social.key"></fa-icon>
+        </span>
+      </a>
+    </div>
+  </div>
+
