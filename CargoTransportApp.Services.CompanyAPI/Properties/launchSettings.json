@@ -4,17 +4,17 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:23174",
-      "sslPort": 44326
+      "applicationUrl": "http://localhost:27577",
+      "sslPort": 44341
     }
   },
   "profiles": {
-    "Cargo.Services.OrderAPI": {
+    "CargoTransportApp.Services.CompanyAPI": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
       "launchUrl": "swagger",
-      "applicationUrl": "https://localhost:7289;http://localhost:5108",
+      "applicationUrl": "https://localhost:7216;http://localhost:5063",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
