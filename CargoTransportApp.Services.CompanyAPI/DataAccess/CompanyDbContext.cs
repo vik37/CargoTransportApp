@@ -16,6 +16,8 @@ namespace CargoTransportApp.Services.CompanyAPI.DataAccess
 
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
+			SeedData.Seed(modelBuilder);
+
 			modelBuilder.Entity<Company>()
 				.HasOne<ShippmentService>(x => x.ShippmentService)
 				.WithOne(x => x.Company)
@@ -25,10 +27,12 @@ namespace CargoTransportApp.Services.CompanyAPI.DataAccess
 				.HasMany<Employee>(x => x.Employees)
 				.WithOne(x => x.Company)
 				.HasForeignKey(x => x.CompanyId);
+
 			modelBuilder.Entity<ShippmentService>()
 				.HasMany<DeliveryByDimension>(x => x.DeliveryByDimensions)
 				.WithOne(x => x.ShippmentService)
 				.HasForeignKey(x => x.ShippmentServiceId);
+
 			modelBuilder.Entity<ShippmentService>()
 				.HasMany<DeliveryByWeight>(x => x.DeliveryByWeights)
 				.WithOne(x => x.ShippmentService)

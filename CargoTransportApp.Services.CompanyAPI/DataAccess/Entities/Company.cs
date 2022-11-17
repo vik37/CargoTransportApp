@@ -18,10 +18,10 @@ namespace CargoTransportApp.Services.CompanyAPI.DataAccess.Entities
 		public string City { get; set; } = string.Empty;
 		[Required]
 		public string Country { get; set; } = string.Empty;
+		public string Link { get; set; }
 		[Required]
 		public CompanyRole CompanyRole { get; set; }
 		public ShippmentService ShippmentService { get; set; }
-		public IEnumerable<Employee> Employees { get; set; } = new List<Employee>();
-		
+		public IEnumerable<Employee> Employees { get; set; } = new List<Employee>();		
 	}
 }
