@@ -10,8 +10,7 @@ namespace CargoTransportApp.Services.CompanyAPI.DataAccess.Repository
 
 		public async Task<IEnumerable<Company>> Get()
 		{
-			return await _db.Company.Include(x => x.ShippmentService)
-								.ToListAsync();
+			return await _db.Company.ToListAsync();
 								
 		}
 		public async Task<Company> GetById(int id)
