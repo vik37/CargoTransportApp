@@ -7,5 +7,7 @@
 		public string Lastname { get; set; } = string.Empty;
 		public string Email { get; set; } = string.Empty;
 		public string WorkPosition { get; set; } = string.Empty;
+		public int CompanyId { get; set; }
+		public Company Company { get; set; }
 	}
 }
