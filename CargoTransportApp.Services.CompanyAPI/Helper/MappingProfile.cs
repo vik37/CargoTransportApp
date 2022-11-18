@@ -9,8 +9,6 @@ namespace CargoTransportApp.Services.CompanyAPI.Helper
 		public MappingProfile()
 		{
 			CreateMap<Company, CompanyDto>()
-				.ForMember(x => x.CreatedOn, src => src.Ignore())
-				.ForMember(x => x.DeletedOn, src => src.Ignore())
 				.ReverseMap()
 				.ForMember(x => x.CraetedOn, src => src.Ignore())
 				.ForMember(x => x.DeletedOn, src => src.Ignore());

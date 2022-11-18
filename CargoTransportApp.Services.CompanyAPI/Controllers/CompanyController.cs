@@ -40,14 +40,14 @@ namespace CargoTransportApp.Services.CompanyAPI.Controllers
 			{
 				_respone.Status = StatusCodes.Status404NotFound;
 				_respone.IsSuccess = false;
-				_respone.Messages = ex.Message;
+				_respone.Message = ex.Message;
 				return _respone;
 			}
 			catch (Exception)
 			{
 				_respone.Status = StatusCodes.Status500InternalServerError;
 				_respone.IsSuccess = false;
-				_respone.Messages = "Server Problem";
+				_respone.Message = "Server Problem";
 				return _respone;
 			}
 		}

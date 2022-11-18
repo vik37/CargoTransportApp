@@ -13,8 +13,6 @@ namespace CargoTransportApp.Services.CompanyAPI.Dtos
 		public string City { get; set; } = string.Empty;
 		public string Country { get; set; } = string.Empty;
 		public string Link { get; set; }
-		public DateTime CreatedOn { get; set; }
-		public DateTime DeletedOn { get; set; }
 		public CompanyRole CompanyRole { get; set; } = CompanyRole.Partner;
 		public ShippmentServiceDto ShippmentService { get; set; }
 		public IEnumerable<EmployeeDto> Employees { get; set; } = new List<EmployeeDto>();

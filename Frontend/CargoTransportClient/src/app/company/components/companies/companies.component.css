@@ -1,0 +1,21 @@
+.companies-main{
+  padding: 10px  50px 0;
+}
+.companies-aside{
+  margin-right: 25px;
+  border-right: 0.4px dashed rgb(255, 255, 255);
+}
+.company-card{
+  width: 270px;
+  margin: 7px;
+}
+.company-card > h5{
+  text-shadow: 0 0 1px rgb(255, 255, 255);
+  background-color: rgb(105, 105, 105);
+  font-weight: bolder;
+  letter-spacing: 0.7px;
+}
+.company-card-body > p{
+  color: rgb(78, 5, 5);
+  font-weight: 700;
+}

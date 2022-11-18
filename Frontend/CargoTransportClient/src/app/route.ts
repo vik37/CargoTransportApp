@@ -12,6 +12,9 @@ export const router: Routes = [
     path: 'about',component:AboutComponent
   },
   {
+    path: 'shipping-services', loadChildren: () => import('./company/company.module').then(c => c.CompanyModule)
+  },
+  {
     path: 'contact',component: ContactComponent
   },
   {

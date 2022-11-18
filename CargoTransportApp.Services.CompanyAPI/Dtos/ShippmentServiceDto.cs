@@ -5,7 +5,6 @@ namespace CargoTransportApp.Services.CompanyAPI.Dtos
 	public class ShippmentServiceDto
 	{
 		public int Id { get; set; }
-		public int MyProperty { get; set; }
 		public int Parcel { get; set; }
 		public int? MinimumDefaultDimension { get; set; }
 		public int? MaximumDefaultDimension { get; set; }
