@@ -1,0 +1,31 @@
+<main class="companies-main">
+  <div class="row">
+    <aside class="col-3 companies-aside">
+      <p><b>We are a company that offers cargo transportation and express delivery services
+        anywhere in the world.</b> We cooperate with other companies in this activity and enable them
+        to offer their conditions through our service. You can freely choose from the right side
+        which company you want to use for its delivery services. If you are interested in partnering
+        with us and using this service, you can send a request to us, below the button.</p>
+        <br />
+        <hr />
+        <br />
+        <button type="button" class="btn btn-outline-light">Partnership</button>
+    </aside>
+    <section class="col-7">
+      <div class="row">
+        <div class="col-4" *ngFor="let company of companies">
+          <div class="card company-card" [ngStyle]="{'background-color':role === company.companyRole?'rgb(255, 176, 80)':'rgb(255, 255, 255)'}">
+            <h5 class="card-header">{{company.name | titlecase}}</h5>
+            <div class="card-body company-card-body">
+              <h5 class="card-title">Country: {{company.country}}</h5>
+              <p class="card-text">Address: {{company.address}}</p>
+              <p class="card-text">Post Code: {{company.postCode}}</p>
+              <p class="card-text">City: {{company.city}}</p>
+              <a [routerLink]="[company.id]" class="btn btn-secondary btn-sm">Go</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>

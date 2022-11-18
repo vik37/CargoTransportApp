@@ -16,10 +16,10 @@ namespace CargoTransportApp.Services.CompanyAPI.DataAccess.Repository
 		public async Task<Company> GetById(int id)
 		{
 			return await _db.Company.Include(x => x.ShippmentService)
-									.ThenInclude(x => x.DeliveryByDimensions)
-								.Include(x => x.ShippmentService)
-									.ThenInclude(x => x.DeliveryByWeights)
-								.FirstOrDefaultAsync(x => x.Id == id);
+										.ThenInclude(x => x.DeliveryByDimensions)
+									.Include(x => x.ShippmentService)
+										.ThenInclude(x => x.DeliveryByWeights)
+									.SingleOrDefaultAsync();
 		}
 		public async Task<int> Add(Company entity)
 		{
