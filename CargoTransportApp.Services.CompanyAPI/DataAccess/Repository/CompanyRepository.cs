@@ -19,7 +19,8 @@ namespace CargoTransportApp.Services.CompanyAPI.DataAccess.Repository
 										.ThenInclude(x => x.DeliveryByDimensions)
 									.Include(x => x.ShippmentService)
 										.ThenInclude(x => x.DeliveryByWeights)
-									.SingleOrDefaultAsync();
+									.FirstOrDefaultAsync(x => x.Id == id);
+
 		}
 		public async Task<int> Add(Company entity)
 		{

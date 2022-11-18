@@ -1,4 +1,5 @@
 import {CompanyRole} from 'src/app/company/models/enums/company-role';
+import {ShippmentService} from 'src/app/company/models/shippment-service';
 export interface Company{
   id:number,
   name:string,
@@ -8,5 +9,6 @@ export interface Company{
   city:string,
   country:string,
   link:string
-  companyRole:CompanyRole
+  companyRole:CompanyRole,
+  shipmentService:ShippmentService
 }

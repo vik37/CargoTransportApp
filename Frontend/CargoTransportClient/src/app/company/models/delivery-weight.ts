@@ -1,4 +1,4 @@
-export interface DeliveryByWeightDto{
+export interface DeliveryByWeight{
   id:number,
   priceIncrease:number | null,
   less:number | null,

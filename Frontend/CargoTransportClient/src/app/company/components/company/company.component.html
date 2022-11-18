@@ -1,17 +1,20 @@
-<main class="container">
+<main class="container company-main">
   <div class="row">
-    <div class="col-3">
-      <div class="card" style="width: 18rem;">
-        <div class="card-header">
-          {{company.name}}
+    <div class="col-8">
+      <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+        <div class="card-header"><h3>{{company?.name}}</h3></div>
+        <div class="card-body">
+          <h5 class="card-title">Country: {{company?.country}}</h5>
+          <p class="card-text">Address: {{company?.address}}</p>
+          <p class="card-text">Post Code: {{company?.postCode}}</p>
+          <p class="card-text">City: {{company?.city}}</p>
         </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">Country: {{company.country}}</li>
-          <li class="list-group-item">Address: {{company.address}}</li>
-          <li class="list-group-item">Post Code: {{company.postCode}}</li>
-          <li class="list-group-item">City: {{company.city}}</li>
-        </ul>
       </div>
+    </div>
+    <div class="col-4">
+      <app-shippment
+        [shipmentService]="shipmentService"
+      ></app-shippment>
     </div>
   </div>
 </main>
