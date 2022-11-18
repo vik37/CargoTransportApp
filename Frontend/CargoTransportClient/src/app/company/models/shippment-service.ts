@@ -1,3 +1,6 @@
+import {DeliveryByDimension} from 'src/app/company/models/delivery-dimension';
+import {DeliveryByWeight} from 'src/app/company/models/delivery-weight';
+import { Company } from './company';
 export interface ShippmentService{
   id:number,
   parcel:number,
@@ -7,5 +10,8 @@ export interface ShippmentService{
   maximumDefaultWeight:number | null,
   initialDimensionPrice:number,
   initialWeightPrice:number,
-  companyId:number
+  companyId:number,
+  company:Company,
+  deliveryByDimensions:DeliveryByDimension[],
+  deliveryByWeights:DeliveryByWeight[]
 }

@@ -17,7 +17,8 @@ export class CompanyService {
                       map(data => data)
                     );
   getById(id:number): Observable<Response>{
-    return this.http.get<Response>(this.companyUri+id).pipe(
+    return this.http.get<Response>(this.companyUri+'/'+id).pipe(
+      tap(data => console.log('company by id: ', data)),
       map(data => data)
     )
   }
